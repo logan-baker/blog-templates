@@ -4,6 +4,10 @@
     padding: 25px;
 }
 
+.page-wrapper img {
+    width: 100%;
+}
+
 .vert-centered {
     align-items: center;
 }
