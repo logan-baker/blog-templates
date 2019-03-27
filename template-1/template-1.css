@@ -1,0 +1,56 @@
+.page-wrapper {
+    margin: 15px;
+    background-color: #66B2BD;
+    padding: 25px;
+}
+
+.vert-centered {
+    align-items: center;
+}
+
+.t1-container {
+    background-color: #66B2BD;
+}
+
+.header,
+.body {
+    color: #fff;
+}
+
+.header {
+    font-size: 6vw;
+    margin-bottom: 0;
+}
+
+.body {
+    font-size: 2vw;
+    text-align: left;
+}
+
+.icon {
+    align-items: center;
+}
+
+.icon img {
+    padding-bottom: 10px;
+}
+
+.icon p {
+    color: #fff;
+    margin-top: 10px;
+    width: 75%;
+    text-align: center;
+
+}
+
+@media screen and (max-width: 800px) {
+    .header {
+        width: 100%;
+        text-align: center;
+    }
+
+    .body {
+        width: 100%;
+        text-align: center;
+    }
+}

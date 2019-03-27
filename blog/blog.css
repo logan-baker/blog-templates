@@ -1,9 +1,9 @@
-.header {
+.nav {
 	display: flex;
 	justify-content: space-evenly;
 }
 
-.header a {
+.nav a {
 	list-style: none;
 }
 
@@ -29,6 +29,7 @@
 	display: flex;
 	flex-direction: column;
 	flex-basis: 100%;
+	margin: 15px;
 }
 
 .blue-column {
