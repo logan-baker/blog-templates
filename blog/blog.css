@@ -1,75 +1,60 @@
-/* Column Classes
-    Link: http://twitter.github.io/bootstrap/assets/css/bootstrap-responsive.css
---------------------------------------------- */
-
-.five-sixths,
-.four-sixths,
-.one-fourth,
-.one-half,
-.one-sixth,
-.one-third,
-.three-fourths,
-.three-sixths,
-.two-fourths,
-.two-sixths,
-.two-thirds {
-	float: left;
-	margin-left: 2.564102564102564%;
-}
-
-.one-half,
-.three-sixths,
-.two-fourths {
-	width: 48.717948717948715%;
-}
-
-.one-third,
-.two-sixths {
-	width: 31.623931623931625%;
-}
-
-.four-sixths,
-.two-thirds {
-	width: 65.81196581196582%;
-}
-
-.one-fourth {
-	width: 23.076923076923077%;
-}
-
-.three-fourths {
-	width: 74.35897435897436%;
-}
-
-.one-sixth {
-	width: 14.52991452991453%;
-}
-
-.five-sixths {
-	width: 82.90598290598291%;
-}
-
-.first {
-	clear: both;
-	margin-left: 0;
-}
-
-.clearfix:before {
-	content: " ";
-	display: table;
-}
-
-.clearfix:after {
-	clear: both;
-	content: " ";
-	display: table;
-}
 
 .header {
-    display: flex;
-    justify-content: space-evenly;
+	display: flex;
+	justify-content: space-evenly;
 }
 
 .header a {
-    list-style: none;
+	list-style: none;
+}
+
+.flex-container {
+	margin: 15px;
+	background-color: red;
+
+}
+
+.flex-row {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	width: 100%;
+}
+
+.flex-column {
+	display: flex;
+	flex-direction: column;
+	flex-basis: 100%;
+}
+
+.blue-column { background-color: blue; height: 100px;}
+.green-column { background-color: green; height: 100px;}
+.orange-column { background-color: orange; height: 100px;}
+.purple-column { background-color: purple; height: 100px;}
+
+@media screen and (min-width: 800px) {
+	.flex-column {
+		flex: 1;
+	}
+
+	.double-column, 
+	.two-thirds {
+		flex: 2;
+	}
+
+	.one-third {
+		flex: calc(1/2);
+	}
+
+	.one-fourth {
+		flex: calc(1/3);
+	}
+
+	.one-sixth {
+		flex: calc(1/5);
+	}
+
+	.three-fourths {
+		flex: 3;
+	}
 }
