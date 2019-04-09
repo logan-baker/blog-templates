@@ -118,7 +118,6 @@
 
 .page-wrapper {
     margin: 15px;
-    background-color: #66B2BD;
     padding: 25px;
 }
 
@@ -145,6 +144,7 @@
 .body {
     font-size: 2vw;
     text-align: left;
+    line-height: 1.2;
 }
 
 .icon {
