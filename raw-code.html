@@ -3,7 +3,7 @@
     &lt;<span class="code">div</span> <span class="native-attribute">class</span>="<span class="declared-class">flex-row vert-centered</span>"&gt;
 
         &lt;<span class="code">div</span> <span class="native-attribute">class</span>="<span class="declared-class">flex-column</span>"&gt;
-            &lt;<span class="code">img</span> <span class="native-attribute">class</span>="<span class="declared-class">main-image</span>" <span class="native-attribute">src</span>="/path/to/img.png" <span class="native-attribute">alt</span>="Custom Alt"&gt;
+            &lt;<span class="code">img</span> <span class="native-attribute">class</span>="<span class="declared-class">main-image</span>" <span class="native-attribute">src</span>="/images/ehe1913.svg"&gt;
         &lt;/<span class="code">div</span>&gt;
 
         &lt;<span class="code">div</span> <span class="native-attribute">class</span>="<span class="declared-class">flex-column</span>"&gt;
@@ -14,22 +14,22 @@
 
     &lt;<span class="code">div</span> <span class="native-attribute">class</span>="<span class="declared-class">flex-row</span>"&gt;
         &lt;<span class="code">div</span> <span class="native-attribute">class</span>="<span class="declared-class">flex-column icon</span>"&gt;
-            &lt;<span class="code">img</span> <span class="native-attribute">src</span>="/path/to/img.png" <span class="native-attribute">alt</span>="Custom Alt"&gt;
+            &lt;<span class="code">img</span> <span class="native-attribute">src</span>="/images/ehe-logo.png"&gt;
             &lt;<span class="code">p</span>&gt;Lorem ipsum dolor sit amet consectetur adipisicing elit.&lt;<span class="code">/p</span>&gt;
         &lt;/<span class="code">div</span>&gt;
 
         &lt;<span class="code">div</span> <span class="native-attribute">class</span>="<span class="declared-class">flex-column icon</span>"&gt;
-            &lt;<span class="code">img</span> <span class="native-attribute">src</span>="/path/to/img.png" <span class="native-attribute">alt</span>="Custom Alt"&gt;
+            &lt;<span class="code">img</span> <span class="native-attribute">src</span>="/images/ehe-logo.png"&gt;
             &lt;<span class="code">p</span>&gt;Lorem ipsum dolor sit amet consectetur adipisicing elit.&lt;<span class="code">/p</span>&gt;
         &lt;/<span class="code">div</span>&gt;
 
         &lt;<span class="code">div</span> <span class="native-attribute">class</span>="<span class="declared-class">flex-column icon</span>"&gt;
-            &lt;<span class="code">img</span> <span class="native-attribute">src</span>="/path/to/img.png" <span class="native-attribute">alt</span>="Custom Alt"&gt;
+            &lt;<span class="code">img</span> <span class="native-attribute">src</span>="/images/ehe-logo.png"&gt;
             &lt;<span class="code">p</span>&gt;Lorem ipsum dolor sit amet consectetur adipisicing elit.&lt;<span class="code">/p</span>&gt;
         &lt;/<span class="code">div</span>&gt;
 
         &lt;<span class="code">div</span> <span class="native-attribute">class</span>="<span class="declared-class">flex-column icon</span>"&gt;
-            &lt;<span class="code">img</span> <span class="native-attribute">src</span>="/path/to/img.png" <span class="native-attribute">alt</span>="Custom Alt"&gt;
+            &lt;<span class="code">img</span> <span class="native-attribute">src</span>="/images/ehe-logo.png"&gt;
             &lt;<span class="code">p</span>&gt;Lorem ipsum dolor sit amet consectetur adipisicing elit.&lt;<span class="code">/p</span>&gt;
         &lt;/<span class="code">div</span>&gt;
     &lt;/<span class="code">div</span>&gt;
@@ -50,8 +50,6 @@
         <span class="native-attribute">class</span>="<span class="declared-class">flex-column</span>"
 </pre> -->
 
-
-
 <style>
     span.code {
         color: blue;
@@ -69,3 +67,18 @@
         color: #569cec;
     }
 </style>
+
+<script>
+    const atrributes = document.querySelectorAll('div class');
+
+    function escape(value) {
+        return value.replace(/</g, '&lt;').replace(/>/g, '&gt;');
+    }
+    document.addEventListener('DOMContentLoaded', (event) => {
+        document.querySelectorAll('pre code').forEach((block) => {
+            const escaped_html = escape(block.innerHTML);
+            console.log('escaped:', escaped_html);
+            console.log('Atts', atrributes)
+        });
+    });
+</script>
